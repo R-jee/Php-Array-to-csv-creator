@@ -31,3 +31,10 @@ function CREATE_CSV_FEEDS___Generic_function( $array , $separated_By){
     }
     return $csv ;
 }
+
+
+$csv = CREATE_CSV_FEEDS___Generic_function( $array , $separated_By______);
+
+$file = "../channels/". trim($selected_channel__) ."/". trim($shop) . time() . trim($separated_By______) ."_separated_csv.txt";
+$file_real_PATH =  $Url_________ . substr($file, 2);
+file_put_contents($file, $csv);
